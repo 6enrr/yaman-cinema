@@ -11,6 +11,7 @@
         button { padding: 10px 20px; border-radius: 6px; border: none; background: #238636; color: white; cursor: pointer; font-weight: bold; }
         button:hover { background: #2ea043; }
         
+        /* تصميم صندوق المشغل المتجاوب والمخصص للتحكم بأبعاد الشاشة والترجمة */
         .player-box { 
             width: 100%; 
             max-width: 950px; 
@@ -50,8 +51,8 @@
 
     {% if watch_id %}
     <div class="player-box">
-        <!-- استخدام مشغل embed.su الحديث لدعم الشاشة الكاملة والترجمة بشكل مثالي -->
-        <iframe src="https://embed.su/embed/movie/{{ watch_id }}" allowfullscreen></iframe>
+        <!-- استخدام الإصدار الثاني من مشغل vidsrc.cc المدعوم للفل سكرين والترجمة بكفاءة عالية -->
+        <iframe src="https://vidsrc.cc/v2/embed/movie/{{ watch_id }}" allowfullscreen></iframe>
     </div>
     {% endif %}
 
