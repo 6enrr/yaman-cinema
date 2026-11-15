@@ -11,7 +11,7 @@
         button { padding: 10px 20px; border-radius: 6px; border: none; background: #238636; color: white; cursor: pointer; font-weight: bold; }
         button:hover { background: #2ea043; }
         
-        /* تعديل مشغل الفيديو ليصبح متجاوباً 100% ويحافظ على الأبعاد بدون مشاكل ترجمة */
+        /* مشغل فيديو متجاوب ومخصص لتدعم الترجمة أثناء ملء الشاشة بشكل كامل */
         .player-box { 
             width: 100%; 
             max-width: 950px; 
@@ -51,7 +51,8 @@
 
     {% if watch_id %}
     <div class="player-box">
-        <iframe src="https://vidsrc.to/embed/movie/{{ watch_id }}" allowfullscreen></iframe>
+        <!-- استخدام مشغل vidsrc.me المدعوم بامتياز لأبعاد الترجمة ووضع ملء الشاشة -->
+        <iframe src="https://vidsrc.me/embed/movie?tmdb={{ watch_id }}" allowfullscreen></iframe>
     </div>
     {% endif %}
 
